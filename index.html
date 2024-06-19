@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nirjal's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg"/>
+</head>
+<script src="https://kit.fontawesome.com/939f5cac61.js" crossorigin="anonymous"></script>
+<body>
+    <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidebar">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#certificate">Certificate</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!-- Fixed quotes -->
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!-- Fixed quotes -->
+                </nav>
+                <div class="header-text">
+                    <h1>Hi,<br> My name is <span>Nirjal.</span></h1>
+                        <div class="wrapper">
+                        <h2>I'm a <span class="auto-type"> </span></h2>
+                        </div>
+                        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                        <script>
+                            var typed = new Typed(".auto-type", {
+                                strings: ["Developer.", "Designer.", "Analyst.", "DM."],
+                                typeSpeed: 100, // Slower typing speed
+                                backSpeed: 100, // Slower backspacing speed
+                                loop: true, // Correct property to enable looping
+                            });
+                        </script>
+                        <a href="#contact"  class="btn-1">Hire Me</a>                        
+                </div>
+                
+            </div>
+    </div>
+    <!----------------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" width="300" alt="user image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="desc">
+                        A former student with specialization in computer science, proficient in Digital Marketing and Web
+                        Development. I am passionate for learning new things and experience in creating user-friendly sites and
+                        developing marketing strategies to deliver outstanding results, equipped with strong problem-solving skills. Eager
+                        to gain, improve and apply knowledge in practical experience and skills.
+                    </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Designing</span><br>
+                                Specializing in unique design solutions, I integrate aesthetics with practicality to create engaging user experiences.
+                            </li>                            
+                            <li>
+                                <span>Web Dev</span><br>
+                                I create dynamic and flexible websites that engage users effectively. With knowledge in front-end and back-end technologies, I provide seamless functionality and the best user experience.
+                            </li>
+                            <li>
+                                <span>Digital Marketing</span><br>
+                                I create appealing digital campaigns geared to specific consumers, ensuring maximum impact across many channels for optimal outcomes and engagement.
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>High School Degree</span><br><br>
+                                2021-2023:<br>
+                                <p style="font-family: sans-serif; line-height: 115%;">
+                                    I earned an outstanding CGPA of 3.71 in my second year (2023) <br>  
+                                    and a GPA of 3.41 in my first year (2022).
+                                </p>
+                            </li>
+                            
+                            <li>
+                                <span>Secondary Education Examination</span><br><br>
+                                2021:
+                                <p style="font-family: sans-serif; line-height: 115%;">
+                                    I obtained a SEE certificate in 2021, achieving a CGPA of 3.65 from Sunflower Academy.
+                                </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Web Development</span><br>
+                                Continuously expanding my skills in web development and design, dedicated to ongoing learning.
+                            </li>
+                            
+                            <li>
+                                <span>Digital Marketing</span><br>
+                                As a beginner in digital marketing, I've focused on ad campaigns and keyword research, improving my skills in strategic targeting and enticing messages for effective online advertising.
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------Services-------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p style="font-family: sans-serif;">
+                        I design visually stunning websites with seamless functionality,
+                         prioritizing user experience to bring clients' visions to life
+                        in the digital realm.
+                    </p>                    
+                    <a  href="#portfolio"></a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-font-awesome"></i>
+                    <h2>Logo design</h2>
+                    <p style="font-family: sans-serif;"></p>I specialize in crafting unique logos that encapsulate brand essence, resonating with target audiences and helping businesses stand out in crowded markets.</p>
+                    <a  href="#portfolio"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-fancy"></i>
+                    <h2>Graphics </h2>
+                    <p style="font-family: sans-serif;"></p>I create compelling visual assets that effectively communicate messages, aiming to captivate audiences and elevate brands through thoughtful design solutions.</p>
+                    <a  href="#portfolio"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h2>Digital Marketing</h2>
+                    <p style="font-family: sans-serif;"></p>the strategic use of online channels to connect with target audiences and drive business growth.</p>
+                    <a  href="#portfolio"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------Portfolio----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Website Design</h3>
+                                <p>
+                                    The art of crafting visually appealing and functional websites,
+                                    blending creativity with user experience to engage and inform visitors effectively.
+                                </p>
+                            <a href="images/fashionwacks.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Logo Design</h3>
+                            <p>
+                                Process of creating unique and memorable visual representations that encapsulate a brand's identity and values.
+                            </p>
+                            <a href="images/logo.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Graphics Design</h3>
+                            <p>
+                                The strategic arrangement of visual elements to communicate messages effectively and aesthetically.
+                            </p>                        
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+    </div>
+    <!------------certificate------------>
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="cert-list">
+                <div class="cert">
+                    <img src="images/fodm.png">
+                    <div class="list">
+                        <h3>Fundamentals of Digital Marketing</h3>
+                        <a href="https://skillshop.exceedlms.com/student/award/9t9Xx72u6gjJS35J6xPwqRC2"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="images/Tag manager.jpg">
+                    <div class="list">
+                        <h3>Google Tag Manager</h3>
+                        <a href="https://analytics.google.com/analytics/academy/certificate/klaEWLVESaqzbxEt5-VYpg"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="images/analytics-1.png">
+                    <div class="list">
+                        <h3>Google Analytics</h3>
+                        <a href="https://skillshop.credential.net/7ea050ea-0798-41a8-acff-10d2ea51a2a5"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://oshuuu001.github.io/certifiacte/" class="btn">See More</a>
+    </div>
+        </div>
+    </div>
+    
+    <!------------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rokanirjal41@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+977 9818780073</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/rocanirjal?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/bobarw.rawrrr?igsh=ejhheWhzMHpqNGc0"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/nirjal-roka-7a6608270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+
+                        </div>
+                        <a href="images/cv.pdf"  download class="btn btn2">Dowanload CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email Address" required> <!-- Fixed missing equals sign -->
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                            <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copywrite">
+            <p><i class="fa-solid fa-heart"></i> Made by Nirjal Roka.</p>
+        </div>
+    </div>
+
+
+<!--------------javascript------>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        // Get the element with a class name
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidebar= document.getElementById("sidebar");
+    function openmenu(){
+        sidebar.style.right = "0";
+    }
+    function closemenu(){
+        sidebar.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwgO7NawuDbWlQjk8xav-KOrJMYsTbxLuYGmcHsBv1rDHlIjfKFnVJx-ycBkUNa5jBG/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  fetch(scriptURL, { method: 'POST', body: formData })
+    .then(response => {
+        console.log('Response received:', response);
+        if (response.ok) {
+            msg.innerHTML = "Message Sent!";
+            setTimeout(function(){
+                msg.innerHTML = "";
+            }, 7000);
+            form.reset();
+        } else {
+            throw new Error('Network response was not ok.');
+        }
+    })
+    .catch(error => {
+        console.error('Fetch Error:', error);
+        msg.innerHTML = "Error occurred. Please try again later.";
+    });
+});
+
+
+</script>
+
+</body>
+</html>
